@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script src="/JavaScript/Script.js" defer></script>
+    <title>Página de noticias</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="">Principais noticias</a></li>
+            <li><a href="">Internacional</a></li>
+            <li><a href="">Contatos do desenvolvedor</a></li>
+        </ul>
+        <fieldset></fieldset>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Principais noticias</h1>
+            <div class="news">
+                <h2>Como astrônomos monitoram asteroide com 2% de chance de atingir a Terra?</h2>
+                <img src="/images/Imagem Planeta.PNG" alt="Imagem">
+                <h3>Clique no icone abaixo para ver o resumo da noticia, acessar a noticia e avalia-la</h3>
+                <div class="buttons">
+                    <abbr title="Clique aqui para ver o resumo da noticia"><button onclick="abrirModal1('first-modal')"><span class="material-symbols-outlined">expand_content</span></button></abbr>
+                    <abbr title="Clique para abrir a noticia"><a href="https://www.cnnbrasil.com.br/tecnologia/como-astronomos-monitoram-asteroide-com-2-de-chance-de-atingir-a-terra/" target="_blank"><span class="material-symbols-outlined">news</span></a></abbr>
+                    <button value="Gostei" id="btn-like-planet" onclick="analiselikeplanet()"><span class="material-symbols-outlined">heart_check</span></button>
+                    <button value="Nãogostei" id="btn-deslike-planet" onclick="analisedeslikeplanet()"><span class="material-symbols-outlined">heart_minus</span></button>
+                </div>
+            </div>
+
+            <div class="news">
+                <h2>Quantos cafés eu posso tomar por dia? Veja riscos e benefícios.</h2>
+                <img src="/images/Café.PNG" alt="Imagem">
+                <h3>Clique no icone abaixo para ver o resumo da noticia, acessar a noticia e avalia-la</h3>
+                <div class="buttons">
+                    <abbr title="Clique aqui paraver o resumo das noticias"><button onclick="abrirModal2()"><span class="material-symbols-outlined">expand_content</span></button></abbr>
+                    <abbr title="Clique para abrir a noticia"><a href="https://www.cnnbrasil.com.br/saude/quantos-cafes-eu-posso-tomar-por-dia-veja-riscos-e-beneficios/" target="_blank"><span class="material-symbols-outlined">newsmode</span></a></abbr>
+                    <button value="Gostei" id="btn-like-cofee" onclick="analiselikecofee()"><span class="material-symbols-outlined">heart_check</span></button>
+                    <button value="Nãogostei" id="btn-deslike-cofee" onclick="analisedeslikecofee()"><span class="material-symbols-outlined">heart_minus</span></button>
+                </div>
+            </div>
+
+            <div class="news">
+                <h2>BYD adquiriu direitos de mineração para explorar lítio no Brasil</h2>
+                <img src="/images/BYD.PNG" alt="Imagem">
+                <h3>Clique no icone abaixo para ver o resumo da noticia, acessar a noticia e avalia-la</h3>
+                <div class="buttons">
+                    <abbr title="Clique aqui paraver o resumo das noticias"><button onclick="abrirModal3()"><span class="material-symbols-outlined">expand_content</span></button></abbr>
+                    <abbr title="Clique para abrir a noticia"><a href="https://www.cnnbrasil.com.br/economia/negocios/byd-adquiriu-direitos-de-mineracao-para-explorar-litio-no-brasil/" target="_blank"><span class="material-symbols-outlined">newsmode</span></a></abbr>
+                    <button value="Gostei" id="btn-like-BYD" onclick="analiselikeBYD()"><span class="material-symbols-outlined">heart_check</span></button>
+                    <button value="Nãogostei" id="btn-deslike-BYD" onclick="analisedeslikeBYD()"><span class="material-symbols-outlined">heart_minus</span></button>
+                </div>
+            </div>
+
+            <div class="news">
+                <h2>“Ela já ganhou”, diz Fernanda Montenegro sobre indicação da filha ao Oscar</h2>
+                <img src="/images/Fernanda Montenegro.PNG" alt="Imagem">
+                <h3>Clique no icone abaixo para ver o resumo da noticia, acessar a noticia e avalia-la</h3>
+                <div class="buttons">
+                    <abbr title="Clique aqui paraver o resumo das noticias"><button onclick="abrirModal4()"><span class="material-symbols-outlined">expand_content</span></button></abbr>
+                    <abbr title="Clique para abrir a noticia"><a href="https://www.cnnbrasil.com.br/entretenimento/ela-ja-ganhou-diz-fernanda-montenegro-sobre-indicacao-de-filha/" target="_blank"><span class="material-symbols-outlined">newsmode</span></a></abbr>
+                    <button value="Gostei" id="btn-like-atris" onclick="analiselikeatris()"><span class="material-symbols-outlined">heart_check</span></button>
+                    <button value="Nãogostei" id="btn-deslike-atris" onclick="analisedeslikeatris()"><span class="material-symbols-outlined">heart_minus</span></button>
+                </div>
+            </div>
+
+            <div class="news">
+                <h2>Ilhabela está entre os 10 destinos mais românticos do mundo</h2>
+                <img src="/images/Ilhabela.PNG" alt="Imagem">
+                <h3>Clique no icone abaixo para ver o resumo da noticia, acessar a noticia e avalia-la</h3>
+                <div class="buttons">
+                    <abbr title="Clique aqui paraver o resumo das noticias"><button onclick="abrirModal5()"><span class="material-symbols-outlined">expand_content</span></button></abbr>
+                    <abbr title="Clique para abrir a noticia"><a href="https://www.cnnbrasil.com.br/viagemegastronomia/viagem/ilhabela-esta-entre-os-10-destinos-mais-romanticos-do-mundo/" target="_blank"><span class="material-symbols-outlined">newsmode</span></a></abbr>
+                    <button value="Gostei" id="btn-like-ilhabela" onclick="analiselikeilhabela()"><span class="material-symbols-outlined">heart_check</span></button>
+                    <button value="Nãogostei" id="btn-deslike-ilhabela" onclick="analisedeslikeilhabela()"><span class="material-symbols-outlined">heart_minus</span></button>
+                </div>
+            </div>
+
+            <div class="news">
+                <h2>Entenda como novo avião da Airbus pode transformar mapa aéreo do mundo</h2>
+                <img src="/images/Airbus.PNG" alt="Imagem">
+                <h3>Clique no icone abaixo para ver o resumo da noticia, acessar a noticia e avalia-la</h3>
+                <div class="buttons">
+                    <abbr title="Clique aqui paraver o resumo das noticias"><button onclick="abrirModal6()"><span class="material-symbols-outlined">expand_content</span></button></abbr>
+                    <abbr title="Clique para abrir a noticia"><a href="https://www.cnnbrasil.com.br/economia/negocios/entenda-como-novo-aviao-da-airbus-pode-transformar-mapa-aereo-do-mundo/" target="_blank"><span class="material-symbols-outlined">newsmode</span></a></abbr>
+                    <button value="Gostei" id="btn-like-airbus" onclick="analiselikeairbus()"><span class="material-symbols-outlined">heart_check</span></button>
+                    <button value="Nãogostei" id="btn-deslike-airbus" onclick="analisedeslikeilhabela()"><span class="material-symbols-outlined">heart_minus</span></button>
+                </div>
+            </div>
+
+            <div class="news">
+                <h2>Itaú Unibanco defende contenção de R$ 35 bilhões no orçamento de 2025</h2>
+                <img src="/images/Itau.PNG" alt="Imagem">
+                <h3>Clique no icone abaixo para ver o resumo da noticia, acessar a noticia e avalia-la</h3>
+                <div class="buttons">
+                    <abbr title="Clique aqui paraver o resumo das noticias"><button onclick="abrirModal7()"><span class="material-symbols-outlined">expand_content</span></button></abbr>
+                    <abbr title="Clique para abrir a noticia"><a href="https://www.cnnbrasil.com.br/economia/macroeconomia/itau-unibanco-defende-contencao-de-r-35-bilhoes-no-orcamento-de-2025/" target="_blank"><span class="material-symbols-outlined">newsmode</span></a></abbr>
+                    <button value="Gostei" id="btn-like-itau" onclick="analiselikeitau()"><span class="material-symbols-outlined">heart_check</span></button>
+                    <button value="Nãogostei" id="btn-deslike-itau" onclick="analisedeslikeitau()"><span class="material-symbols-outlined">heart_minus</span></button>
+                </div>
+            </div>
+        </div>
+
+        <dialog id="first-modal">
+            <button onclick="fecharModal1()"><span class="material-symbols-outlined">collapse_content</span></button>
+            <p><span id="titulo-modal">Resumo da noticia</span><br><fieldset id='line'></fieldset>O asteroide 2024 YR4, recentemente descoberto, tem uma chance de 2% de colidir com a Terra em 2032. Seu tamanho varia entre 40 e 90 metros, o que o torna capaz de causar destruição local, mas bem menor que o asteroide que extinguiu os dinossauros. Astrônomos monitoram ativamente o objeto, com o apoio do Telescópio Espacial James Webb, que pode fornecer dados mais precisos sobre sua trajetória e tamanho. O asteroide foi detectado pelo Telescópio Atlas e, embora esteja atualmente se afastando da Terra, o monitoramento continuará para avaliar o risco de impacto. Mesmo com a baixa probabilidade de colisão, o estudo contínuo é essencial, pois asteroides menores também podem causar grandes danos.
+        </dialog>
+        
+        <dialog id="secund-modal">
+            <button onclick="fecharModal2()"><span class="material-symbols-outlined">collapse_content</span></button>
+            <p><span id="titulo-modal">Resumo da noticia<br></span><fieldset id="line"></fieldset>Pesquisas recentes mostram que o consumo moderado de café, entre 2 a 4 xícaras por dia, pode reduzir o risco de doenças como doenças cardíacas, diabetes e até mesmo mortalidade precoce. Isso se deve a compostos no café com propriedades antioxidantes e anti-inflamatórias. A quantidade de cafeína considerada segura é de até 400 mg por dia (cerca de 4 xícaras), mas o consumo excessivo pode causar palpitações, ansiedade e insônia. Pessoas com condições cardíacas, grávidas e crianças devem tomar cuidado com a cafeína. O chá também pode oferecer benefícios semelhantes, mas bebidas energéticas e refrigerantes não têm os mesmos efeitos positivos devido ao açúcar e produtos químicos presentes.</p>
+        </dialog>
+
+        <dialog id="trhe-modal">
+            <button onclick="fecharModal3()"><span class="material-symbols-outlined">collapse_content</span></button>
+            <p><span id="titulo-modal">Resumo da noticia<br></span><fieldset id="line"></fieldset>Em 2023, a BYD, fabricante chinesa de carros elétricos, adquiriu direitos minerários sobre dois lotes ricos em lítio no Brasil, marcando sua entrada no setor de mineração. A subsidiária BYD Exploração Mineral do Brasil foi criada para gerir essa aquisição, que fica perto da nova fábrica da empresa na Bahia. A BYD tem investido na mineração de lítio, também com planos no Chile. A prospecção no Brasil está em fase de pesquisa, e o projeto pode levar de 8 a 15 anos para se tornar economicamente viável. O Brasil tem atraído interesse global pelo seu setor de lítio.</p>
+        </dialog>
+
+        <dialog id="four-modal">
+            <button onclick="fecharModal4()"><span class="material-symbols-outlined">collapse_content</span></button>
+            <p><span id="titulo-modal">Resumo da noticia<br></span><fieldset id="line"></fieldset>A atriz Fernanda Montenegro, de 95 anos, declarou que sua filha, Fernanda Torres, já "ganhou" ao ser indicada ao Oscar 2025, afirmando que a indicação em si é uma grande conquista. Montenegro, que foi a primeira brasileira indicada ao Oscar de Melhor Atriz, vê a filha repetindo o feito 25 anos depois. Ela expressou sua alegria em ver a filha realizada como artista, chamando-a de uma "alma renascentista". Além da indicação de Torres, o filme "Ainda Estou Aqui" também disputa as categorias de Melhor Filme e Melhor Filme Internacional.</p>
+        </dialog>
+
+        <dialog id="five-modal">
+            <button onclick="fecharModal5()"><span class="material-symbols-outlined">collapse_content</span></button>
+            <p><span id="titulo-modal">Resumo da noticia<br></span><fieldset id="line"></fieldset>Ilhabela, localizada no litoral norte de São Paulo, foi classificada entre os 10 destinos mais românticos do mundo, segundo um levantamento do Airbnb. O estudo analisou as cidades mais mencionadas como "românticas" nas avaliações dos hóspedes nos últimos 10 anos. Ilhabela é famosa por suas mais de 40 praias, cachoeiras, trilhas e o Parque Estadual, que preserva grande parte da Mata Atlântica. Além disso, é um destino procurado para avistamento de baleias e viagens românticas. A lista inclui destinos como Riomaggiore (Itália), Austin (EUA) e Puerto Vallarta (México).</p>
+        </dialog>
+
+        <dialog id="six-modal">
+            <button onclick="fecharModal6()"><span class="material-symbols-outlined">collapse_content</span></button>
+            <p><span id="titulo-modal">Resumo da noticia<br></span><fieldset id="line"></fieldset>O A321XLR é um avião de corredor único da Airbus, com maior alcance e economia de combustível (30% a menos por assento) em comparação com modelos anteriores. Ele está permitindo a criação de novas rotas transatlânticas para cidades menores, substituindo o antigo Boeing 757. O avião é popular entre grandes companhias aéreas como Aer Lingus, Iberia, American Airlines e United, que planejam expandir suas rotas e melhorar a experiência do passageiro com novas classes executivas e premium. Apesar de um pequeno corte no alcance devido a modificações de segurança, o modelo continua sendo uma opção vantajosa para muitas rotas.</p>
+        </dialog>
+
+        <dialog id="seven-modal">
+            <button onclick="fecharModal7()"><span class="material-symbols-outlined">collapse_content</span></button>
+            <p><span id="titulo-modal">Resumo da noticia<br></span><fieldset id="line"></fieldset>O Itaú Unibanco recomendou um congelamento de R$ 35 bilhões nas despesas discricionárias do Orçamento Geral da União (OGU) já em março, como medida para garantir o cumprimento da meta fiscal de déficit zero em 2025. O banco projeta um déficit primário de 0,7% do PIB para este ano e considera improvável o cumprimento da meta de -0,6% para 2025. A recomendação visa mostrar ao mercado o compromisso do governo com a austeridade fiscal. O governo também planeja adotar uma gestão rígida dos gastos discricionários até a aprovação do orçamento, com um possível decreto para limitar a execução orçamentária dos ministérios.</p>
+        </dialog>
+    </main>
+
+    <footer></footer>
+</body>
+</html> 
